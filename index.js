@@ -31,7 +31,7 @@ function viewCart() {
       items.push(item + " at $" + cart[i][item]);
     }
   }
-    if(items.length ===1){
+    if(items.length === 1){
       console.log("In your cart, you have " + items[0] + ".");
 
     }
@@ -71,8 +71,7 @@ function removeFromCart(item) {
   }
   if(!isFound){ //isFound is false
     console.log('That item is not in your cart.')
-  }
-  else{
+  } else {
     cart.splice(removeItemPos,1); //removes found item from cart 
     return cart; //returns updated cart without the removed item 
   }
